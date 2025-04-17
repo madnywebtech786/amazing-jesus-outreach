@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1380px;
+    margin: 0 auto; /* center */
+}
+.heading{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width: 25%;
+    padding: 5px 10px; /* top & bottom    right & left */
+
+}
+.heading-content{
+    width: 45%;
+    padding: 5px 10px 0 0; /* top right bottom left */
+    
+}
+.address{
+    width: 30%;
+    padding: 5px 10px 5px 0;
+}
