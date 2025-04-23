@@ -198,7 +198,7 @@
 .company-name h1{
     font-size: 54px;
     background: -webkit-linear-gradient(#fff, #bd0adb);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 /* slider starts */
@@ -348,3 +348,99 @@
     }
   }
 /* slider ends */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.about-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: zoomIn 1.2s ease-in-out;
+}
+.about-text {
+  flex: 1;
+  animation: slideUp 1.2s ease-in-out;
+}
+.about-text h4 {
+  color: #00a3ad;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.about-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #053b50;
+  margin-bottom: 20px;
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+.features {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f1f6f9;
+  padding: 15px;
+  border-left: 4px solid #00a3ad;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.features {
+  font-size: 14px;
+  color: #333;
+}
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+.features li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.features li::before {
+  content: '\2713';
+  color: #00a3ad;
+  margin-right: 8px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #e76f51;
+  border: 2px solid #e76f51;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #e76f51;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes slideUp {
+  from {transform: translateY(30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+@keyframes zoomIn {
+  from {transform: scale(0.9); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
