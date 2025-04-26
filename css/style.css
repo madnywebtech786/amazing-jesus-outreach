@@ -1123,7 +1123,7 @@ iframe {
 .testimonial-section {
   display: flex;
   background: #f0f8f8;
-  margin: 50px;
+  margin: 50px 160px;
   border-radius: 30px;
   overflow: hidden;
   height: 350px;
