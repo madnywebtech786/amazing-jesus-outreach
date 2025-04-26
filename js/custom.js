@@ -47,3 +47,25 @@
   // Pause on hover
   scrollWrapper.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
   scrollWrapper.addEventListener('mouseleave', autoScroll);
+
+  let testimonials = document.querySelectorAll('.testimonial');
+  let currentIndex = 0;
+  
+  function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+      testimonial.classList.remove('active');
+      if (i === index) {
+        testimonial.classList.add('active');
+      }
+    });
+  }
+  
+  function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+  
+  // Start the slider
+  showTestimonial(currentIndex);
+  setInterval(nextTestimonial, 3000); // Change every 3 seconds
+  
